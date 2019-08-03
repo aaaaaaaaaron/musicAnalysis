@@ -55,7 +55,9 @@ def whichScale(notes):
     for baseNote in notesList:
         viableScales.append(createScale(baseNote, 0))
 
-    viableIter = iter(viableScales)
+    for scale in viableScales:
+        for note in notes:
+            if note not in scale:
 
 
     return viableScales
